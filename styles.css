@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.legal_img {
+    transition: linear all .1s;
+}
+
+.legal_img:hover {
+    cursor: pointer;
+    transform: rotate(5deg);
+    transition: linear all .1s;
+}
+
+
+p {
+   text-align: justify;
+}
+
+/* Scroll */
+body::-webkit-scrollbar {
+    width: 1rem;
+}
+   
+body::-webkit-scrollbar-track {
+    background-color: #9f2241;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #691c32;
+    border-radius: 10px;
+}
+ 
+/* Menu section */
+.nav {
+    z-index: 1;
+    width: 100%;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    transition: linear all .3s;
+}
+
+section .nav-row {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.col-sm-4 .menu-options {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    column-gap: 1rem;
+}
+
+.col-sm-4 .menu-options li a {
+    padding: 6px;
+    border-radius: 3px;
+    color: #ffffffa2;
+    text-decoration: none;
+}
+
+.col-sm-4 .menu-options li a:hover {
+    transition: ease-in-out .3s;
+    cursor: pointer;
+    color: #FFF;
+}
+span {
+    font-family: 'Righteous', cursive;
+    color: #d43059;
+}
+
+.title {
+    font-family: 'Righteous', cursive !important;
+    color: white;
+}
+
+.title-list {
+    font-family: 'Righteous', cursive;
+    color: #d43059;
+}
+/* info-vaner */
+.info-vaner {
+    display: flex;
+    background-color: #691c32;
+    height: 100vh;
+    color: #FFF;
+}
+
+.info-area {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding-left: 12.5rem;
+}
+
+.img-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 0rem 6rem;
+}
+
+img {
+    width: 35rem;
+}
+
+.question {
+    font-family: 'Righteous', cursive !important;
+    font-size: 2.5rem !important;
+}
+
+/* Info-section */
+
+.info-section {
+    padding:10rem;
+}
+
+
+/* game-area */
+.game-area {
+    padding: 10rem;
+    display: flex;
+    background-color: #691c32;
+    color: #FFF;
+}
+
+.game-area .row .col-sm-10 .instructions {
+    text-align: center;
+}
+
+/* footer */
+.footer {
+    color: #FFF;
+    background-color: #691c32;
+    padding: 5rem 10rem;
+}
+
+
+
+/* Slide */
+.form-control {
+    padding: 0.3rem;
+    border-radius: 4px;
+    width: 25rem;
+    outline: none;
+    /* text-align: center; */
+    border: none;
+}
+
+.material-container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    
+}
+
+.material {
+    overflow: hidden;
+    background-color: rgb(233, 233, 233);
+    padding: 10px;
+    border-radius: 5px;
+    transition: linear all .3s;
+}
+
+.material-container img {
+    width: 100%;
+    height: 18rem;
+}
+
+.material:hover {
+    transform: scale(0.9);
+    transition: linear all .3s;
+    cursor: pointer;
+}
+
+.link-material {
+    background-color: #9f2241;
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px;
+    width: 96%;
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.list {
+    list-style: none;
+    display: grid;
+    min-height: 300px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+}
+
+.estados_list_botton {
+    background-color: #9f2241;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    padding: .3rem;
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Estilos generales */
+.row {
+    display: flex;
+    column-gap: 1rem;
+    width: 100%;
+}
+
+.col-sm-3 {
+    width: 30%;
+}
+
+.col-sm-4 {
+    width: 40%;
+}
+
+.col-sm-5 {
+    width: 50%;
+}
+
+.col-sm-6 {
+    width: 60%;
+}
+
+.col-sm-7 {
+    width: 70%;
+}
+
+.col-sm-8 {
+    width: 80%;
+}
+
+.col-sm-9 {
+    width: 90%;
+}
+
+.col-sm-10 {
+    width: 100%;
+}
+

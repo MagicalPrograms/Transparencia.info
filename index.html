@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparencia.info</title>
+    <link href="./styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- Menu -->
+    <section id="nav" class="nav">
+        <div class="row nav-row">
+            <div class="col-sm-4">
+                <h2 class="title">TRANSPARENCIA<span>.INFO</span></h2>
+            </div>
+            <div class="col-sm-4">
+                <ul class="menu-options">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#Leyes">Leyes</a></li>
+                    <li><a href="#Juegos">Estados</a></li>
+                    <li><a href="#Material">Material</a></li>
+                    <li><a href="#Juegos_area">Juegos</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="inicio" class="info-vaner">
+        <div class="row">
+            <div class="col-sm-5 info-area">
+                <h2 class="good-vibes">¡Bienvenido!</h2>
+                <h1 class="question">¿Quieres Conocer Mas Sobre Transparencia?</h1>
+                <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+                labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+                animcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+                aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
+                pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
+                commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
+                proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
+                eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
+                Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
+                culpa duis.</p>
+            </div>
+            <div class="col-sm-5 img-area">
+                <img src="https://edeal.cl/assets/img/backgrounds/free-image.webp" alt="img">
+            </div>
+        </div>
+    </section>
+
+    <section id="Leyes" class="info-section">
+        <div class="row">
+            <div class="col-sm-10">
+                <h1>Leyes</h1>
+                <p>Estas son las leyes de Transparencia las cuales dictan cada uno de las obligaciones que deben cumplir los sujetos obligados</p>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3 row" style="flex-direction: column;">
+                        <img id="Ley_General" src="./img/Ley_General.jpg" onclick="Abrir(this.id)" class="legal_img" style="width: 20rem; height: 27rem;" alt="Ley general">
+                    </div>
+                    <div class="col-sm-3 row" style="flex-direction: column;">
+                        <img id="Ley_Transparencia" src="./img/Ley.png" onclick="Abrir(this.id)" class="legal_img" style="width: 20rem; height: 27rem;" alt="Ley general">
+                    </div>
+                    <div class="col-sm-3 row" style="flex-direction: column;">
+                        <img id="Ley_Proteccion" src="./img/Screenshot_4.png" onclick="Abrir(this.id)" class="legal_img" style="width: 20rem; height: 27rem;" alt="Ley general">
+                    </div>
+                    <div class="col-sm-3 row" style="flex-direction: column;">
+                        <img id="Constitucion" src="./img/Constitucion.jpg" onclick="Abrir(this.id)" class="legal_img" style="width: 20rem; height: 27rem;" alt="Ley general">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Juegos" class="game-area">
+        <div class="row">
+            <div class="col-sm-10">
+                <h1>La Trnsparencia en tu estado</h1>
+                <br>
+                <p>Es considerado de buenas practicas que cada sujeto obligado cuente con un portal de <span>Transparencia.</span> es por eso que acontinuación te dejamos algunos de ellos</p>
+                <br>
+                <!-- <input id="Buscador" onkeyup="Buscar()" placeholder="Buscar" type="text" style="margin-bottom: 1rem; width: 23rem !important; outline: none; padding: 0.3rem;"> -->
+                <div>
+                    <ul id="Estados" class="list"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Material" class="info-section">
+        <div class="row">
+            <div class="col-sm-10">
+                <h1>Material de apoyo</h1>
+                <div class="material-container">
+                    <div id="Coordinacion_archivo" onclick="Abrir(this.id)" class="material">
+                        <img src="./Doc/Coordinacion_archivo.png" alt="">
+                        <a class="link-material" href="">Coordinacion de Arcivos</a>
+                    </div>
+                    <div id="Proteccion_datos" onclick="Abrir(this.id)" class="material">
+                        <img src="./Doc/Datos_Personales.png" alt="">
+                        <a class="link-material" href="">Protección de datos presonales</a>
+                    </div>
+                    <div id="Obligacion_transparencia" onclick="Abrir(this.id)" class="material">
+                        <img src="./Doc/Obligaciones_transparencia.png" alt="">
+                        <a class="link-material" href="">Obligaciones de Transparencia</a>
+                    </div>
+                    <div id="Ley_transparencia" onclick="Abrir(this.id)" class="material">
+                        <img src="./Doc/Presentacion_base.png" alt="">
+                        <a class="link-material" href="">Ley de Transparencia y Acceso a la Información Pública</a>
+                    </div>
+                    <div id="Precedimiento_solicitud" onclick="Abrir(this.id)" class="material">
+                        <img src="./Doc/Procedimeintos_recursos_plazos.png" alt="">
+                        <a class="link-material" href="">Procedimientos para atender Solcitudes de Información, recursos de revisión y sus plazos</a>
+                    </div>
+                    <div id="Ninios_transparencia" onclick="Abrir(this.id)" class="material">
+                        <img src="./Doc/Tambien_es_cosa_de_ninio.png" alt="">
+                        <a class="link-material" href="">La Transparencia tambien es cosa de niños</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Juegos_area" class="info-section" style="background-color: aliceblue;">
+        <h1>Juegos</h1>
+        <p>Selecciona algunos de los juegos interactivos de transparencia que tenemos para aprender y divertirnos al mismo tiempo</p>
+        <p>¡Proximamente!</p>
+        <br>
+        <canvas id="canvas" style="width: 100%; height: 600px; background-color: black;"></canvas>
+        <div id="userLetters"></div>
+        <div id="wordContainer"></div>
+        <button id="start">Start</button>
+        <br>
+        <p style="width: 100%; text-align: center;">Utiliza las teclas <span>A</span> <span>W</span> <span>D</span> <span>S</span> para moverte</p>
+    </section>
+    <section class="footer" style="display: flex; flex-direction: column; row-gap: 2rem;">
+        <div class="row">
+            <div class="col-sm-10">
+                <img src="https://transparencia.ahome.gob.mx/wp-content/uploads/2021/12/cropped-Ahome-1.png" style="width: 15rem;" alt="Ahome img">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10">
+                <p>Este es un portal creado por el municipio de <span>AHOME</span></p>
+            </div>
+        </div>
+        <div class="row" style="display: flex; justify-content: space-between;">
+            <div class="col-sm-3" >
+                <p class="title-list">Conoce sobre</p>
+                 <ul style="padding-left: 2rem;">
+                    <li>Transparencia</li>
+                    <li>Datos Personales</li>
+                    <li>Articulos</li>
+                    <li>Ley de tranpsarnencia</li>
+                    <li>Ley General de Transparencia</li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <p class="title-list">Paginas</p>
+                <ul style="padding-left: 2rem;">
+                    <li>Transparencia Ahome</li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <p class="title-list">Contactos</p>
+                <ul style="padding-left: 2rem;">
+                    <li>unidad.transparencia@ahome.gob.mx</li>
+                    <li>oficialia.transparencia@ahome.gob.mx</li>
+                    <li>preteciondatos.transparenica@ahome.gob.mx</li>
+                    <li>Ext. 1234, Tel:+52 (6681)12-34-56</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section style="padding: 1rem; display: flex; justify-content: center; background-color: #531326; color: white;">
+        <div>
+            <p>Copyright @ Ahome, Sinaloa, México 2023</p>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
