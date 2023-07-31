@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"  />
   </head>
   <body>
     <noscript>
@@ -13,5 +14,63 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+      let selecciones = []
+      let score = 0
+
+      function select(x) {
+        console.log(x);
+        let tarjeta = document.getElementById("tarjeta" + x)
+        if(tarjeta.style.transform != "rotateY(180deg)"){
+          tarjeta.style.transform = "rotateY(180deg)"
+          selecciones.push(x)
+        }
+
+        if(selecciones.length == 2) {
+          deseleccionar(selecciones)
+          selecciones = []
+        }
+      }
+
+      function deseleccionar(selecciones) {
+        console.log("Desactivar");
+        setTimeout(() => {
+          let tarsera1 = document.getElementById("trasera" + selecciones[0])
+          let tarsera2 = document.getElementById("trasera" + selecciones[1])
+          if(tarsera1.innerHTML != tarsera2.innerHTML) {
+            let tarjeta1 = document.getElementById("tarjeta" + selecciones[0])
+            let tarjeta2 = document.getElementById("tarjeta" + selecciones[1])
+
+            tarjeta1.style.transform = "rotateY(0deg)";
+            tarjeta2.style.transform = "rotateY(0deg)";
+          } else {
+            const titulo = tarsera1.children.item(0).getAttribute("titulo")
+            const valor = tarsera1.children.item(0).getAttribute("valor")
+            Swal.fire(
+              titulo,
+              valor,
+              'success'
+            )
+
+            tarsera1.style.backgroundColor = "#2f953c"
+            tarsera1.style.color = "#FFF"
+
+            tarsera2.style.backgroundColor = "#2f953c"
+            tarsera2.style.color = "#FFF"
+
+            score += 1
+
+            if(score == 9) {
+              Swal.fire(
+                '¡Good job!',
+                '¡You Win!',
+                'success'
+              )
+            }
+          }
+        }, 900)
+      }
+    </script>
   </body>
 </html>
